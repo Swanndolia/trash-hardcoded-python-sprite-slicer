@@ -34,7 +34,7 @@ def main():
         if filename.endswith(".png"):
             index_second_underscore = filename.find("_", 1)
             if index_second_underscore != -1:
-                split_png(os.path.join("/home/swanndolia/Desktop/sheets/", filename), filename[:index_second_underscore], filename[index_second_underscore+5:-4])
+                split_png(os.path.join("/home/swanndolia/Desktop/sheets/", filename), filename[:index_second_underscore], filename[index_second_underscore:-4])
 
 if __name__ == "__main__":
     main()
