@@ -23,7 +23,7 @@ def split_png(filepath, charactertype, bodypart):
         action += "_" + directory if directory != "front" else ""
         if i == (height // 64) - 1:
             directory = "front"
-            action = ""
+            action = "_hurt"
         os.makedirs("/home/swanndolia/Desktop/spritesrows/" + directory, exist_ok=True)
         line.save(os.path.join("/home/swanndolia/Desktop/spritesrows/", directory, f"{charactertype}{action}{bodypart}.png"))
         num_lines += 1
